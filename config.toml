@@ -1,4 +1,4 @@
-baseURL = "https://coldsauce.github.io/blog"
+baseURL = "https://blog.stefanaleksic.com"
 title = "🙈   🙉"
 
 publishDir = "docs"
