@@ -1,6 +1,7 @@
 ---
 title: Cool Hacker Tools -- Vim
 date: 2018-03-23 01:30:00+09:00
+description: "How I use Vim"
 tags: [ "Productivity" ]
 aliases:
 - /2018/03/23/cht-Vim/
