@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog.stefan.com/posts/2018/03/22/that_took_a_while/</loc>
+    <loc>https://coldsauce.github.io/posts/2018/03/22/that_took_a_while/</loc>
     <lastmod>2018-03-22T01:30:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.stefan.com/categories/</loc>
+    <loc>https://coldsauce.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog.stefan.com/posts/</loc>
-    <lastmod>2018-03-22T01:30:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.stefan.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.stefan.com/tags/uncategorized/</loc>
+    <loc>https://coldsauce.github.io/posts/</loc>
     <lastmod>2018-03-22T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog.stefan.com/</loc>
+    <loc>https://coldsauce.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coldsauce.github.io/tags/uncategorized/</loc>
+    <lastmod>2018-03-22T01:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coldsauce.github.io/</loc>
     <lastmod>2018-03-22T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
