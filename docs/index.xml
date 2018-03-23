@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>🙈   🙉</title>
-    <link>http://blog.stefan.org/</link>
+    <link>http://blog.stefan.com/</link>
     <description>Recent content on 🙈   🙉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Mar 2018 01:30:00 +0900</lastBuildDate>
     
-	<atom:link href="http://blog.stefan.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.stefan.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>That Took a While</title>
-      <link>http://blog.stefan.org/posts/2018/03/22/that_took_a_while/</link>
+      <link>http://blog.stefan.com/posts/2018/03/22/that_took_a_while/</link>
       <pubDate>Thu, 22 Mar 2018 01:30:00 +0900</pubDate>
       
-      <guid>http://blog.stefan.org/posts/2018/03/22/that_took_a_while/</guid>
+      <guid>http://blog.stefan.com/posts/2018/03/22/that_took_a_while/</guid>
       <description>I finally have my own hosted blog! Picking a good enough Hugo theme was so incredibly difficult, but at least for right now, I picked the hugo-zen theme. There were a few issues I found with it so I modified it a bunch. But as a foundation, I&amp;rsquo;ve found it to be very good.
 I wanted to add my own flavor to it so I added a glitch art image and changed the coloring a bit to match it.</description>
     </item>

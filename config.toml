@@ -1,9 +1,10 @@
-baseURL = "http://blog.stefan.org/"
+baseURL = "http://blog.stefan.com/"
 title = "🙈   🙉"
 
 publishDir = "docs"
 languageCode = "en-us"
 author = "coldsauce"
+theme = "hugo-zen"
 
 [params]
   logo      = "/images/stylish.jpg"
