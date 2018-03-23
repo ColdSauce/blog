@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>🙈   🙉</title>
-    <link>https://blog.stefanaleksic.com/</link>
-    <description>Recent content on 🙈   🙉</description>
+    <title>Productivity on 🙈   🙉</title>
+    <link>https://blog.stefanaleksic.com/tags/productivity/</link>
+    <description>Recent content in Productivity on 🙈   🙉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Mar 2018 01:30:00 +0900</lastBuildDate>
     
-	<atom:link href="https://blog.stefanaleksic.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.stefanaleksic.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://blog.stefanaleksic.com/posts/2018/03/23/cool_hacker_tools_part_1/</guid>
       <description>This blog post series&amp;rsquo; goal is to provide a comprehensive list of tools I use and how to set them up.
 When I first started programming, I was so curious to try the coolest gadgets and try new editors, window managers, and programming languages. This blog post’s goal is to try to share as much information that I have with you, either a complete beginner, looking to increase your productivity and to make your stuff look really cool, or an experienced developer looking to add a few tools to your arsenal.</description>
-    </item>
-    
-    <item>
-      <title>That Took a While</title>
-      <link>https://blog.stefanaleksic.com/posts/2018/03/22/that_took_a_while/</link>
-      <pubDate>Thu, 22 Mar 2018 01:30:00 +0900</pubDate>
-      
-      <guid>https://blog.stefanaleksic.com/posts/2018/03/22/that_took_a_while/</guid>
-      <description>I finally have my own hosted blog! Picking a good enough Hugo theme was so incredibly difficult, but at least for right now, I picked the hugo-zen theme. There were a few issues I found with it so I modified it a bunch. But as a foundation, I&amp;rsquo;ve found it to be very good.
-I wanted to add my own flavor to it so I added a glitch art image and changed the coloring a bit to match it.</description>
     </item>
     
   </channel>
