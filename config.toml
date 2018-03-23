@@ -7,7 +7,7 @@ author = "coldsauce"
 theme = "hugo-zen"
 
 [params]
-  logo      = "/blog/images/stylish.jpg"
+  logo      = "images/stylish.jpg"
   twitter   = "https://twitter.com/stayfun_"
   github    = "https://github.com/coldsauce/"
   email     = "stefan@stefanaleksic.com"
