@@ -1,10 +1,10 @@
 ---
 title: Comparing Functional Languages
-date: 2018-03-23 01:30:00+09:00
+date: 2017-04-07 01:30:00+09:00
 description: "Part one discusses Scala's pattern recognition vs. Scheme's operating on lists."
 tags: [ "Programming Languages" ]
 aliases:
-- /2018/03/23/cfl/
+- /2017/04/07/cfl/
 ---
  
 I wrote this blog post about a year ago but finally got a chance to publish it.

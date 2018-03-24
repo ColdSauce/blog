@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>Comparing Functional Languages</title>
-      <link>https://blog.stefanaleksic.com/posts/2018/03/23/comparing_functional_languages/</link>
-      <pubDate>Fri, 23 Mar 2018 01:30:00 +0900</pubDate>
-      
-      <guid>https://blog.stefanaleksic.com/posts/2018/03/23/comparing_functional_languages/</guid>
-      <description>I wrote this blog post about a year ago but finally got a chance to publish it.
-How many ::’s does it take to screw in a light-bulb? A car’s worth. I’m currently in a class where we are using Scheme extensively. This has made me very used to the idea of structuring my algorithms using car and cdr for any sort of data manipulation. car returns the head of a List while cdr returns the tail of List.</description>
-    </item>
-    
-    <item>
       <title>Cool Hacker Tools -- Vim</title>
       <link>https://blog.stefanaleksic.com/posts/2018/03/23/cool_hacker_tools_part_1/</link>
       <pubDate>Fri, 23 Mar 2018 01:30:00 +0900</pubDate>
@@ -39,6 +29,139 @@ When I first started programming, I was so curious to try the coolest gadgets an
       <guid>https://blog.stefanaleksic.com/posts/2018/03/22/that_took_a_while/</guid>
       <description>I finally have my own hosted blog! Picking a good enough Hugo theme was so incredibly difficult, but at least for right now, I picked the hugo-zen theme. There were a few issues I found with it so I modified it a bunch. But as a foundation, I&amp;rsquo;ve found it to be very good.
 I wanted to add my own flavor to it so I added a glitch art image and changed the coloring a bit to match it.</description>
+    </item>
+    
+    <item>
+      <title>Sleeping on the Floor</title>
+      <link>https://blog.stefanaleksic.com/posts/2017/12/31/floor/</link>
+      <pubDate>Sun, 31 Dec 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2017/12/31/floor/</guid>
+      <description>I’ve been sleeping on the floor for the past 3 months, it has been nothing short of amazing.
+When I moved to my new room in San Francisco, I found out the previous tenant never took their mattress with them. They left it there for some reason. I needed a bed so I bought some queen sized bed sheets and a pillow that I put on the mattress lying on my floor.</description>
+    </item>
+    
+    <item>
+      <title>The Best Year Of My Life</title>
+      <link>https://blog.stefanaleksic.com/posts/2017/12/31/best_year/</link>
+      <pubDate>Sun, 31 Dec 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2017/12/31/best_year/</guid>
+      <description>2017 was a year of good people and amazing adventures.
+Nan Lian Garden, Hong Kong
+January
+I woke up a sleeping security guard at the airport in Beijing, telling her that I have to get to my gate as I had a flight to Hong Kong in 12 hours. She was startled and told me that Hainan airlines will give me a free hotel. I was confused since I thought I needed a visa to leave the Beijing airport but I just went with the flow.</description>
+    </item>
+    
+    <item>
+      <title>Today was a Good Day</title>
+      <link>https://blog.stefanaleksic.com/posts/2017/12/18/good_day/</link>
+      <pubDate>Mon, 18 Dec 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2017/12/18/good_day/</guid>
+      <description>I had a fantastic day and wanted to write about it.
+My friend Jeron came to SF to hang out for the weekend. I woke up, got ready for the day, and got a text message from my roommate, Dan, asking if we want to get brunch. I don’t know why he even asks me anymore when I always say yes. I was so excited and hungry. I called my friend Changbai to ask if he wanted to join us at The Grove in Hayes Valley.</description>
+    </item>
+    
+    <item>
+      <title>My Motivation</title>
+      <link>https://blog.stefanaleksic.com/posts/2017/10/16/motivation/</link>
+      <pubDate>Mon, 16 Oct 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2017/10/16/motivation/</guid>
+      <description>If you talked to me at a party any time in the past couple of months — you know exactly what questions I asked you.
+“What is your biggest fear?”
+“Why do you want to be successful?”
+“What does success mean to you?”
+“Where does your motivation come from?”
+I asked these questions because I was asking myself them and didn’t have the answers that would satisfy me.
+Over the past year, I have been struggling trying to figure out who I am and what I’m supposed to do.</description>
+    </item>
+    
+    <item>
+      <title>URL Shorteners as a Data Store</title>
+      <link>https://blog.stefanaleksic.com/posts/2017/08/12/url_short/</link>
+      <pubDate>Sat, 12 Aug 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2017/08/12/url_short/</guid>
+      <description>Because why not?
+GitHub repo
+In this blog post, I’m going to be talking about a proof of concept I created for a way to store data in any URL shortening service on the internet.
+I have been thinking of paradigms revolving around data. How data is stored, how it’s transfered, and how it’s consumed. I tried to do a couple of experiments in the storage aspect to see if I could come up with some new cool way of storing data.</description>
+    </item>
+    
+    <item>
+      <title>Comparing Functional Languages</title>
+      <link>https://blog.stefanaleksic.com/posts/2017/04/07/comparing_functional_languages/</link>
+      <pubDate>Fri, 07 Apr 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2017/04/07/comparing_functional_languages/</guid>
+      <description>I wrote this blog post about a year ago but finally got a chance to publish it.
+How many ::’s does it take to screw in a light-bulb? A car’s worth. I’m currently in a class where we are using Scheme extensively. This has made me very used to the idea of structuring my algorithms using car and cdr for any sort of data manipulation. car returns the head of a List while cdr returns the tail of List.</description>
+    </item>
+    
+    <item>
+      <title>Quick Serbian Lesson — Kako Da Ne</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/11/01/kako_da_ne/</link>
+      <pubDate>Tue, 01 Nov 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/11/01/kako_da_ne/</guid>
+      <description>Why do so many Serbian people keep on saying “How yes no” in regular conversation?
+When trying to translate “kako da ne” into English, Google picks it up as Croatian and gives the incorrect translation of “how yes no.”
+Како да не.
+This translates to two completely different phrases given a different tone.
+When used in a sarcastic way, it means “yeah, ok” or “yeah, right.” Used in a non sarcastic tone it means “of course” which might be a bit strange at first to someone learning Serbian.</description>
+    </item>
+    
+    <item>
+      <title>Slavic Antithesis</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/11/01/antithesis/</link>
+      <pubDate>Tue, 01 Nov 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/11/01/antithesis/</guid>
+      <description>Look up in the sky! It’s a bird! It’s a plane! No! It’s Superman!
+The Slavic Antithesis is used in South-Slavic epic poetry. Serbian, Bosnian, Croatian, Macedonian, etc. It’s a fascinating literary stylistic device in which the author poses a question, gives a number of incorrect answers, and finally gives the correct answer. This increases the validity as well as the impact of the last answer.
+An Example “Šta se bijeli u gori zelenoj?</description>
+    </item>
+    
+    <item>
+      <title>Be Like Goku</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/09/13/be_like_goku/</link>
+      <pubDate>Tue, 13 Sep 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/09/13/be_like_goku/</guid>
+      <description>If you know me, you know I’m a huge fan of Dragonball. Be it the original, Dragonball Z, Dragonball GT (yes, I said it!), or DragonBall Super. I have been thinking a lot about my life and how I got where I am today. The thing that always comes back is the Goku effect.
+What is the Goku effect? Quite simply — always work as hard as you can to be the best.</description>
+    </item>
+    
+    <item>
+      <title>On Scala Case Classes and Companion Objects</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/09/08/scala_objects/</link>
+      <pubDate>Thu, 08 Sep 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/09/08/scala_objects/</guid>
+      <description>Structuring your code in terms of case classes and companion objects is a great way to easily decouple your data and allow people to easily use it.
+Here’s an example of where case classes are incredibly useful. Let’s say we want to solve an algorithm question. Knowing how this algorithm works isn’t really necessary to understand the concepts of this blog post but I just wanted to show how the abstraction works.</description>
+    </item>
+    
+    <item>
+      <title>Functional Error Handling in Scala</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/09/02/error_handling/</link>
+      <pubDate>Fri, 02 Sep 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/09/02/error_handling/</guid>
+      <description>For this blog post, I am going to be using a strongly typed language — Scala. All the principles here apply to any other strongly typed functional programming language.
+There are several reasons why throwing errors is bad. The biggest one is that it’s a GOTO. It makes your code difficult to reason about and control.
+So — how do we approach errors in a more functional way? We know we can’t just do the following:</description>
+    </item>
+    
+    <item>
+      <title>Who</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/08/08/who/</link>
+      <pubDate>Mon, 08 Aug 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/08/08/who/</guid>
+      <description>I went to an art workshop last week. It was hosted by an Austrian artist couple who call themselves UBERMORGEN. If I never knew anything about them, or if I never heard of their art, I would think that they were hackers making cool side projects for fun. I would never view them as artists. Look at their projects and tell me they wouldn’t win 1st place at any hackathon with those ideas.</description>
     </item>
     
   </channel>

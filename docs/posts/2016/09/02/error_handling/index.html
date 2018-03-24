@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.37.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="Functional Error Handling in Scala">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://blog.stefanaleksic.com/images/stylish.jpg">
+
+<meta name="description" content="">
+
+<meta name="twitter:title" content="Functional Error Handling in Scala">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://blog.stefanaleksic.com/images/stylish.jpg">
+<meta name="twitter:card" content="summary">
+
+
+
+
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/normalize.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/skeleton.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/custom.css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="🙈   🙉">
+<title>Functional Error Handling in Scala - 🙈   🙉</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+      <a href="https://blog.stefanaleksic.com"><img src="https://blog.stefanaleksic.com/images/stylish.jpg" width="60" height="60" alt="🙈   🙉"></a>
+		</div>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">Functional Error Handling in Scala</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2016-09-02">September 02, 2016</time></span>
+			<section itemprop="entry-text">
+				
+
+<p>For this blog post, I am going to be using a strongly typed language — Scala. All the principles here apply to any other strongly typed functional programming language.</p>
+
+<p>There are several reasons why throwing errors is bad. The biggest one is that it’s a GOTO. It makes your code difficult to reason about and control.</p>
+
+<p>So — how do we approach errors in a more functional way? We know we can’t just do the following:</p>
+
+<pre><code>def someFunc(n: String): String throws NumberFormatException
+</code></pre>
+
+<p>What do we do instead?</p>
+
+<p>Let’s think about this in terms of types. Types are powerful because they allow the compiler to assume a lot of things about your code. They allow you to be incredibly precise and allow you to define functionality in a clear way.</p>
+
+<h2 id="option-type">Option Type</h2>
+
+<p>One way to handle errors is to use the Option type. The Option type is either of type Some or of type None. So you either have a value contained in it or you don’t.</p>
+
+<p>Option types aren’t bad for expressing errors but you need to know when to use them and when to not. As my statistics professor used to say “beautiful mathematics is being as concise and as simple as possible without sacrificing correctness.”</p>
+
+<p>Here’s an example where the Option type is good for error handling.</p>
+
+<pre><code>def splitVectorAtValue[A](value: A, vector: Vector[A]): Option[(Vector[A], Vector[A])] = {
+    vector.indexOf(value) match {
+        case -1 =&gt; None
+        case n =&gt; Some(vector.splitAt(n))
+    }
+}
+</code></pre>
+
+<p>There will either exist a split or there won’t. When the function returns a None type, the error is implicitly defined as “the value didn’t exist in the vector.”</p>
+
+<h2 id="either-type">Either Type</h2>
+
+<p>Let’s say we want to be more verbose because our code requires it. Perhaps it’s because there could be many things that could go wrong. Or perhaps there might be a non-obvious thing that could go wrong.</p>
+
+<p>Let’s say you have some function</p>
+
+<pre><code>def getPersonFromDatabase(db: Database, ssn: String): Person = {
+    ... 
+}
+</code></pre>
+
+<p>If we were to wrap the return type as Option, it would be ambiguous on what actually occurred. If the function returned None, was it because there was no person in the database with the social security number we queried? Could we not access the database for some reason? Was there some other problem? Returning a None doesn’t give us any detailed information about any of these problems. All it says is that the function didn’t return a Person for some reason.</p>
+
+<p>Our goal now is to try and come up with a more detailed and precise way of saying what went wrong. For this, again, we need to think in terms of types. Option gives you a None and a Some, right? What we want this time is like an Option except instead of a None, it should be the actual error that we encountered in our function. We want some type T that contains either an error or our value.</p>
+
+<p>It’s our lucky day because there is a type that exists in Scala that does it for you!</p>
+
+<p>The definition of the Either type is the following:</p>
+
+<pre><code>sealed abstract class Either[+A, +B] extends AnyRef
+</code></pre>
+
+<p>All right, we’re getting somewhere!</p>
+
+<p>Here’s a potentially real-world example of using Either for error handling.</p>
+
+<pre><code>sealed trait DatabaseError
+case object CouldNotEstablishConnection extends DatabaseError
+case class CouldNotCreateInsert[A](someObject: A) extends DatabaseError
+def runDatabaseStatements(database: Database, cookie: Cookie): Either[DatabaseError, Statement] = {
+    val connection = database.connection
+    val insertCookieStatement = database.getInsertStatement(cookie)
+    for {
+      connection &lt;- connection.right
+      cookieStatement &lt;- insertCookieStatement.right
+      _ &lt;- database.run(cookieStatement).right
+    } yield {
+      cookieStatement
+    }
+}
+case class Database(...) {
+    val connection: Either[DatabaseError, Connection] = {
+        ...
+    }
+    def getInsertStatement[A](a: A): Either[DatabaseError, Statement] = {
+        ...
+    }
+    def run(someStatement: Statement): Either[DatabaseError, Unit] = {
+        ....
+    }
+}
+</code></pre>
+
+<p>This is great but there is a better way to do all of this :O</p>
+
+<p>I know right? Crazy!</p>
+
+<h2 id="cats-xor">Cats Xor</h2>
+
+<p>Cats has something even better than Either — Xor. Xor has extra utility functions that I will not be going into here because one can view them in the documentation. But the biggest improvement from Either to Xor is the fact that .map and .flatMap are right-biased. What this means is that instead of doing .right like we did with Either, Cats assumes that you want the right value. No pun intended.</p>
+
+<p>My favorite thing about Xor is that it infects every type it touches. So when you’re using it with another type, it wraps the other type with Xor. It makes sense — all error-prone code that touches other code is also error-prone.</p>
+
+<h2 id="try">Try</h2>
+
+<p>This is all great for your own errors that use either Xor or Either. But what happens if you’re calling a function that was written by a someone that doesn’t know about Xor or Either and throws an exception?</p>
+
+<p>The following is allowed in Scala. But it’s just like “Array” in that it exists just as a way to be easily compatible with Java code.</p>
+
+<pre><code>try {
+    someFunctionThatThrowsAnException()
+} catch(someException) {
+}
+</code></pre>
+
+<p>A better way of doing this is to use the Try class in scala.util.</p>
+
+<pre><code>Try {
+    someFunctionThatThrowsAnException()
+} match {
+    case Success(v) =&gt; doSomething()
+    case Failure(someFailure) =&gt; doSomethingElse(someFailure)
+}
+</code></pre>
+
+<p>That’s pretty much that. What I just described is all the error handling techniques that I use on a day to day basis coding in Scala.</p>
+
+<p>I’m still new to Scala so I might have made a mistake or perhaps there is a better way to do these things. To my knowledge, this is the best way to do it.</p>
+
+<p>Please feel free to respond with feedback or recommend this to your friends coding in Scala!</p>
+
+<dl>
+<dt>If you’d like to talk about this, tweet at me!</dt>
+</dl>
+
+<p>:wq and peace</p>
+
+<p>There seems to be an equivalent in Scalaz called <code>\/</code>. However, only issue for me is that I haven’t really ever used Scalaz so I don’t know enough about <code>\/</code> to write about it here :( (Thanks to runT1ME for the tip on Twitter)</p>
+
+<p>According to /u/ItsNotMineISwear on <a href="https://www.reddit.com/r/scala/comments/50vyop/functional_error_handling_in_scala/">the Reddit thread for this post</a>, Either will become right-biased in Scala version 2.12. I’m so excited!</p>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="mailto:stefan@stefanaleksic.com" target="_blank">Email</a>
+			<a href="https://twitter.com/stayfun_" target="_blank">Twitter</a>
+			
+			<a href="https://github.com/coldsauce/" target="_blank">GitHub</a>
+			
+		</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 🙈   🙉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Mar 2018 01:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 Dec 2017 01:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.stefanaleksic.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Personal</title>
+      <link>https://blog.stefanaleksic.com/tags/personal/</link>
+      <pubDate>Sun, 31 Dec 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/tags/personal/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Productivity</title>
@@ -23,9 +32,27 @@
     <item>
       <title>Programming Languages</title>
       <link>https://blog.stefanaleksic.com/tags/programming-languages/</link>
-      <pubDate>Fri, 23 Mar 2018 01:30:00 +0900</pubDate>
+      <pubDate>Fri, 07 Apr 2017 01:30:00 +0900</pubDate>
       
       <guid>https://blog.stefanaleksic.com/tags/programming-languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>https://blog.stefanaleksic.com/tags/project/</link>
+      <pubDate>Sat, 12 Aug 2017 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/tags/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://blog.stefanaleksic.com/tags/scala/</link>
+      <pubDate>Thu, 08 Sep 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/tags/scala/</guid>
       <description></description>
     </item>
     

@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.stefanaleksic.com/posts/2018/03/23/comparing_functional_languages/</loc>
-    <lastmod>2018-03-23T01:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.stefanaleksic.com/posts/2018/03/23/cool_hacker_tools_part_1/</loc>
     <lastmod>2018-03-23T01:30:00+09:00</lastmod>
   </url>
@@ -18,7 +13,73 @@
   </url>
   
   <url>
+    <loc>https://blog.stefanaleksic.com/posts/2017/12/31/floor/</loc>
+    <lastmod>2017-12-31T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2017/12/31/best_year/</loc>
+    <lastmod>2017-12-31T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2017/12/18/good_day/</loc>
+    <lastmod>2017-12-18T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2017/10/16/motivation/</loc>
+    <lastmod>2017-10-16T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2017/08/12/url_short/</loc>
+    <lastmod>2017-08-12T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2017/04/07/comparing_functional_languages/</loc>
+    <lastmod>2017-04-07T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2016/11/01/kako_da_ne/</loc>
+    <lastmod>2016-11-01T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2016/11/01/antithesis/</loc>
+    <lastmod>2016-11-01T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2016/09/13/be_like_goku/</loc>
+    <lastmod>2016-09-13T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2016/09/08/scala_objects/</loc>
+    <lastmod>2016-09-08T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2016/09/02/error_handling/</loc>
+    <lastmod>2016-09-02T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2016/08/08/who/</loc>
+    <lastmod>2016-08-08T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.stefanaleksic.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/tags/personal/</loc>
+    <lastmod>2017-12-31T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -36,13 +97,25 @@
   
   <url>
     <loc>https://blog.stefanaleksic.com/tags/programming-languages/</loc>
-    <lastmod>2018-03-23T01:30:00+09:00</lastmod>
+    <lastmod>2017-04-07T01:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/tags/project/</loc>
+    <lastmod>2017-08-12T01:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/tags/scala/</loc>
+    <lastmod>2016-09-08T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.stefanaleksic.com/tags/</loc>
-    <lastmod>2018-03-23T01:30:00+09:00</lastmod>
+    <lastmod>2017-12-31T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

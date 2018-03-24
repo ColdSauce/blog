@@ -6,17 +6,17 @@
     <description>Recent content in Programming Languages on 🙈   🙉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Mar 2018 01:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 07 Apr 2017 01:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.stefanaleksic.com/tags/programming-languages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Comparing Functional Languages</title>
-      <link>https://blog.stefanaleksic.com/posts/2018/03/23/comparing_functional_languages/</link>
-      <pubDate>Fri, 23 Mar 2018 01:30:00 +0900</pubDate>
+      <link>https://blog.stefanaleksic.com/posts/2017/04/07/comparing_functional_languages/</link>
+      <pubDate>Fri, 07 Apr 2017 01:30:00 +0900</pubDate>
       
-      <guid>https://blog.stefanaleksic.com/posts/2018/03/23/comparing_functional_languages/</guid>
+      <guid>https://blog.stefanaleksic.com/posts/2017/04/07/comparing_functional_languages/</guid>
       <description>I wrote this blog post about a year ago but finally got a chance to publish it.
 How many ::’s does it take to screw in a light-bulb? A car’s worth. I’m currently in a class where we are using Scheme extensively. This has made me very used to the idea of structuring my algorithms using car and cdr for any sort of data manipulation. car returns the head of a List while cdr returns the tail of List.</description>
     </item>

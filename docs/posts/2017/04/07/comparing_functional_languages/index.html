@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.37.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="Comparing Functional Languages">
+<meta property="og:description" content="Part one discusses Scala&#39;s pattern recognition vs. Scheme&#39;s operating on lists.">
+<meta property="og:image" content="https://blog.stefanaleksic.com/images/stylish.jpg">
+
+<meta name="description" content="Part one discusses Scala&#39;s pattern recognition vs. Scheme&#39;s operating on lists.">
+
+<meta name="twitter:title" content="Comparing Functional Languages">
+<meta name="twitter:description" content="Part one discusses Scala&#39;s pattern recognition vs. Scheme&#39;s operating on lists.">
+<meta name="twitter:image" content="https://blog.stefanaleksic.com/images/stylish.jpg">
+<meta name="twitter:card" content="summary">
+
+
+
+
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/normalize.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/skeleton.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/custom.css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="🙈   🙉">
+<title>Comparing Functional Languages - 🙈   🙉</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+      <a href="https://blog.stefanaleksic.com"><img src="https://blog.stefanaleksic.com/images/stylish.jpg" width="60" height="60" alt="🙈   🙉"></a>
+		</div>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">Comparing Functional Languages</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2017-04-07">April 07, 2017</time></span>
+			<section itemprop="entry-text">
+				<p>I wrote this blog post about a year ago but finally got a chance to publish it.</p>
+
+<p>How many <code>::</code>’s does it take to screw in a light-bulb? A <code>car</code>’s worth. </p>
+
+<p>I’m currently in a class where we are using Scheme extensively. This has made me very used to the idea of structuring my algorithms using <code>car</code> and <code>cdr</code> for any sort of data manipulation. </p>
+
+<p><code>car</code> returns the head of a List while <code>cdr</code> returns the tail of List. </p>
+
+<p>Here is a simple implementation of a sum function to understand how <code>car</code> and <code>cdr</code> works.</p>
+
+<pre><code>(define (sum some-list)
+    (if (null? some-list) 0
+        (+ (car some-list) (sum (cdr some-list)))
+    )
+)
+</code></pre>
+
+<p>This is a structurally recursive approach in which we add the first element of each recursive step up until we have no more elements in the list, in which case we return a concrete 0.</p>
+
+<p>Having been doing Scheme for about 4 months, this is a very common pattern I see. It’s the construct that allows for the general idea of “iterating through a list” to function. </p>
+
+<p>What I wanted to do was compare this with another functional language, Scala, and see what the differences were.</p>
+
+<p>Scala is the best language I have ever written in. (Not true anymore :D, now it&rsquo;s Go) I have been using it for about a year and a half now and absolutely love it. Since both of the languages are considered functional, they share many similarities. However, I feel like Scala has many more abstractions that make things a lot easier.</p>
+
+<p>To mirror the above code, here is the same idea applied in Scala.</p>
+
+<pre><code>def sum(someList: List[Int]): Int = {
+    someList match {
+      case Nil =&gt; 0
+      case x :: xs =&gt; x + sum(xs)
+    }
+}
+</code></pre>
+
+<dl>
+<dt>There is a very clear distinction between these two. Scala uses a concept known as pattern matching to get the head and tail of a List whereas Scheme uses predefined functions to do the same thing. What is interesting, though, is how both of these concepts are trying to do the same two things — wrangle with the structure of lists.</dt>
+</dl>
+
+<p>:wq</p>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="mailto:stefan@stefanaleksic.com" target="_blank">Email</a>
+			<a href="https://twitter.com/stayfun_" target="_blank">Twitter</a>
+			
+			<a href="https://github.com/coldsauce/" target="_blank">GitHub</a>
+			
+		</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

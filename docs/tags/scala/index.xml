@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scala on 🙈   🙉</title>
+    <link>https://blog.stefanaleksic.com/tags/scala/</link>
+    <description>Recent content in Scala on 🙈   🙉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Sep 2016 01:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.stefanaleksic.com/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On Scala Case Classes and Companion Objects</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/09/08/scala_objects/</link>
+      <pubDate>Thu, 08 Sep 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/09/08/scala_objects/</guid>
+      <description>Structuring your code in terms of case classes and companion objects is a great way to easily decouple your data and allow people to easily use it.
+Here’s an example of where case classes are incredibly useful. Let’s say we want to solve an algorithm question. Knowing how this algorithm works isn’t really necessary to understand the concepts of this blog post but I just wanted to show how the abstraction works.</description>
+    </item>
+    
+    <item>
+      <title>Functional Error Handling in Scala</title>
+      <link>https://blog.stefanaleksic.com/posts/2016/09/02/error_handling/</link>
+      <pubDate>Fri, 02 Sep 2016 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2016/09/02/error_handling/</guid>
+      <description>For this blog post, I am going to be using a strongly typed language — Scala. All the principles here apply to any other strongly typed functional programming language.
+There are several reasons why throwing errors is bad. The biggest one is that it’s a GOTO. It makes your code difficult to reason about and control.
+So — how do we approach errors in a more functional way? We know we can’t just do the following:</description>
+    </item>
+    
+  </channel>
+</rss>
