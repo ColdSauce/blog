@@ -27,7 +27,7 @@ The philosophy of navigation for Vim is to move your hands as least as possible.
 
 ### Fancy Navigation
 The following are commands I use every day
-`zz`, `gg`, `G`, `^`, `$`, `w`, `b`, `f<some char>`, `F<some char`
+`zz`, `gg`, `G`, `^`, `$`, `w`, `b`, `f<some char>`, `F<some char>`
 
 `zz` is my favorite fancy command. It moves your window so that your cursor will be in the middle of it.
 
