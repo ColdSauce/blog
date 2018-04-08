@@ -92,7 +92,15 @@ To do this, it&rsquo;s important to look at things through an economic perspecti
 
 <p>That is, unless you&rsquo;re not using your own computers.</p>
 
-<p>There have been several projects that have aimed at using other people&rsquo;s computers in clever ways to proxy data to and from Tor. My favorite one is &ldquo;OSS: Using Online Scanning Services for Censorship Circumvention.&rdquo; You can read the paper <a href="http://crypto.stanford.edu/~dabo/papers/redirects.pdf">here</a>. The basic idea is that they use scanning services freely available on the internet as a way to proxy the connection of two peers. Even if a censor blocked every Tor node, a person could still access Tor in this way. It is a clever application of rendezvous.</p>
+<p>There have been several projects that have aimed at using other people&rsquo;s computers in clever ways to proxy data to and from Tor. My favorite one is &ldquo;OSS: Using Online Scanning Services for Censorship Circumvention.&rdquo; You can read the paper <a href="http://crypto.stanford.edu/~dabo/papers/redirects.pdf">here</a>. The basic idea is that they use scanning services freely available on the internet as a way to proxy the connection of two peers. An example they give is the website <code>PDFmyURL</code>.</p>
+
+<p>Users provide this website a URL, and the website gives them back a PDF view of the URL&rsquo;s contents. They used this to proxy requests from one person to another in a really clever way. Alice initiates the connection by giving <code>PDFmyURL</code> a URL to Bob, the person they wish to connect to, along with some information in the URL such as Alice&rsquo;s IP address.</p>
+
+<p><code>PDFmyURL</code> will send an HTTP GET request to Bob&rsquo;s server. Bob will reply with a HTTP status code 302 (temporary redirect) response and request that <code>PDFmyURL</code> redirects the request to Alice&rsquo;s IP address. However, he also includes data inside the URL via URL parameters.</p>
+
+<p>Once Alice gets the redirect, she can redirect back to Bob by sending back a 302 redirect HTTP response to <code>PDFmyURL</code> with a URL to Bob along with some information she wants to send back to Bob.</p>
+
+<p>This is repeated until the session finishes.</p>
 
 <p>The other one that I really like is Flash Proxy. You can read the original paper <a href="https://crypto.stanford.edu/flashproxy/flashproxy.pdf">here</a>. Flash proxy creates abundant short lived proxies. A business can place an &ldquo;interent freedom&rdquo; badge on their site and the website&rsquo;s visitors run a piece of Javascript that converts their browsers into proxies to a Tor relay node. This project has been deprecated but there is now a new project called <a href="https://github.com/keroserene/snowflake">Snowflake</a> which is doing the same thing using WebRTC.</p>
 

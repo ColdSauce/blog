@@ -50,10 +50,17 @@ The same is true for censors and censorship resistance networks. However, one mu
 
 That is, unless you're not using your own computers.
 
-There have been several projects that have aimed at using other people's computers in clever ways to proxy data to and from Tor. My favorite one is "OSS: Using Online Scanning Services for Censorship Circumvention." You can read the paper [here](http://crypto.stanford.edu/~dabo/papers/redirects.pdf). The basic idea is that they use scanning services freely available on the internet as a way to proxy the connection of two peers. Even if a censor blocked every Tor node, a person could still access Tor in this way. It is a clever application of rendezvous.
+There have been several projects that have aimed at using other people's computers in clever ways to proxy data to and from Tor. My favorite one is "OSS: Using Online Scanning Services for Censorship Circumvention." You can read the paper [here](http://crypto.stanford.edu/~dabo/papers/redirects.pdf). The basic idea is that they use scanning services freely available on the internet as a way to proxy the connection of two peers. An example they give is the website `PDFmyURL`. 
+
+Users provide this website a URL, and the website gives them back a PDF view of the URL's contents. They used this to proxy requests from one person to another in a really clever way. Alice initiates the connection by giving `PDFmyURL` a URL to Bob, the person they wish to connect to, along with some information in the URL such as Alice's IP address.
+
+`PDFmyURL` will send an HTTP GET request to Bob's server. Bob will reply with a HTTP status code 302 (temporary redirect) response and request that `PDFmyURL` redirects the request to Alice's IP address. However, he also includes data inside the URL via URL parameters.
+
+Once Alice gets the redirect, she can redirect back to Bob by sending back a 302 redirect HTTP response to `PDFmyURL` with a URL to Bob along with some information she wants to send back to Bob.
+
+This is repeated until the session finishes.
 
 The other one that I really like is Flash Proxy. You can read the original paper [here](https://crypto.stanford.edu/flashproxy/flashproxy.pdf). Flash proxy creates abundant short lived proxies. A business can place an "interent freedom" badge on their site and the website's visitors run a piece of Javascript that converts their browsers into proxies to a Tor relay node. This project has been deprecated but there is now a new project called [Snowflake](https://github.com/keroserene/snowflake) which is doing the same thing using WebRTC.
-
 
 ## Issues
 
