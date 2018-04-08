@@ -16,7 +16,7 @@ I'm going to talk about the different commands I use every day.
 
 The basic workflow looks something like this
 
-![workflow](https://static.notion-static.com/515ec603-3578-4d7a-923f-b5cbc67b5c71/Blank_Diagram_-_Page_1_(6).png)
+![workflow](/images/git_workflow.png)
 
 When creating a change, the typical workflow is something like this:
 
@@ -121,7 +121,7 @@ After the `-i`, you need to specify where you want the rebase to start. With thi
 
 By doing `HEAD~~~` you are telling Git that you want the commit hash 3 commits behind HEAD which is where you are currently at. Now you will get a screen that looks something like this.  
 
-![rebase](https://static.notion-static.com/209a2391-9601-4aef-af38-8b108326c818/Screen_Shot_2018-04-08_at_2.02.47_PM.png)
+![rebase](/images/rebase_workflow.png)
 *These commits are presented in reverse-chronological order.* 
 
 The following are commands I use every day when rebasing:

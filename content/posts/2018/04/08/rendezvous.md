@@ -14,8 +14,8 @@ The most basic solution is to use another DNS resolver that doesn't block the DN
 
 It seems to me that DNS infrastructure alone isn't well suited for rendezvous in hostile conditions.
 
-![](https://static.notion-static.com/c84a1fae-ba1e-4a13-9b94-c6221b09cdc8/Untitled)
-People spray painted Google's DNS Resolver IP Address used in Turkey when the government started censoring the internet via DNS 
+![turkey dns](/images/turkey_dns.png)
+*People spray painted Google's DNS Resolver IP Address used in Turkey when the government started censoring the internet via DNS*
 
 Before looking at specific solutions, it's important to look at the types of solutions that work well in the real world.
 To do this, it's important to look at things through an economic perspective and a practicality perspective.
@@ -48,7 +48,7 @@ That is, unless you're not using your own computers.
 
 There have been several projects that have aimed at using other people's computers in clever ways to proxy data to and from Tor. My favorite one is "OSS: Using Online Scanning Services for Censorship Circumvention." You can read the paper [here](http://crypto.stanford.edu/~dabo/papers/redirects.pdf). The basic idea is that they use scanning services freely available on the internet as a way to proxy the connection of two peers. Even if a censor blocked every Tor node, a person could still access Tor in this way. It is a clever application of rendezvous.
 
-The other one that I really like is Flash Proxy. You can read the original paper [here](https://crypto.stanford.edu/flashproxy/flashproxy.pdf). Flash proxy creates abundant short lived proxies. A business can place an "interent freedom" badge on their site and the website's visitors run a piece of Javascript that converts their browsers into proxies to a Tor relay node. This project has been deprecated but there is now a new project called Snowflake which is doing the same thing using WebRTC.
+The other one that I really like is Flash Proxy. You can read the original paper [here](https://crypto.stanford.edu/flashproxy/flashproxy.pdf). Flash proxy creates abundant short lived proxies. A business can place an "interent freedom" badge on their site and the website's visitors run a piece of Javascript that converts their browsers into proxies to a Tor relay node. This project has been deprecated but there is now a new project called [Snowflake](https://github.com/keroserene/snowflake) which is doing the same thing using WebRTC.
 
 
 ## Issues
@@ -60,5 +60,9 @@ How can you set up a rendezvous scheme where most things are blocked and the cen
 How do you prevent DOS attacks?
 
 How do you make it harder for censors to track rendezvous points?
+
+---
+
+Please let me know what you think about these ideas by emailing me or Tweeting at me!
 
 :wq
