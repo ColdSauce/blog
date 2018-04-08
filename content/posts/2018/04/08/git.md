@@ -104,7 +104,7 @@ After doing a lot of other internships where I worked with several people on the
 
 ## Advanced Commands
 
-One of the things I was always really scared of was a `git rebase`. I thought that it would delete all my changes so I never bothered to work with it. However, this past fall, I was required to rebase extensively since merge commits looked bad in the history and because I was using Phabricator and the `arc diff` tool to create differential revisions as part of code review. This usually works best with having just one commit per diff. [here]([https://medium.com/@kurtisnusbaum/stacked-diffs-keeping-phabricator-diffs-small-d9964f4dcfa6](https://medium.com/@kurtisnusbaum/stacked-diffs-keeping-phabricator-diffs-small-d9964f4dcfa6)) is a really good blog post about one advantage with rebasing and keeping one commit per diff. The same applies to Github's notion of pull requests.
+One of the things I was always really scared of was a `git rebase`. I thought that it would delete all my changes so I never bothered to work with it. However, this past fall, I was required to rebase extensively since merge commits looked bad in the history and because I was using Phabricator and the `arc diff` tool to create differential revisions as part of code review. This usually works best with having just one commit per diff. [Here](https://medium.com/@kurtisnusbaum/stacked-diffs-keeping-phabricator-diffs-small-d9964f4dcfa6) is a really good blog post about one advantage with rebasing and keeping one commit per diff. The same applies to Github's notion of pull requests.
 
 **Git rebase**
 
@@ -120,7 +120,7 @@ All these are actually really easy to do, and actually breaking your Git repo is
 
 `git rebase -i` is where I start. `-i` tells the rebase command that you want this to be an interactive session and you want to chose how you want to rebase.
 
-After the `-i`, you need to specify where you want the rebase to start. With this, you need to provide a Git commit hash. You can use `git log` to find your commits and their hashes and copy them. However, in my typical workflow, I just do the following: `git rebase -i HEAD^^^`
+After the `-i`, you need to specify where you want the rebase to start. With this, you need to provide a Git commit hash. You can use `git log` to find your commits and their hashes and copy them. However, in my typical workflow, I just do the following: `git rebase -i HEAD~~~`
 
 By doing `HEAD~~~` you are telling Git that you want the commit hash 3 commits behind HEAD which is where you are currently at. Now you will get a screen that looks something like this.  
 
@@ -169,7 +169,7 @@ Code to be reviewed should be as small as possible. See the linked post on Stack
 
 ## Commit Messages
 
-Check out [this]([https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/)) blog post about writing good commit messages.
+Check out [this](https://chris.beams.io/posts/git-commit/) blog post about writing good commit messages.
 
 **Tl;dr: Make your commit messages short and to the point and use the imperative mood in the subject line.**
 
