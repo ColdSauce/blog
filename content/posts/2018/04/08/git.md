@@ -1,6 +1,9 @@
 ---
 title: "Cool Hacker Tools -- Git"
-date: 2018-04-08T17:14:42-04:00
+date: 2018-04-08 01:30:00+09:00
+tags: ["Productivity"]
+aliases:
+- /2018/04/08/git/
 ---
 This blog post series’ goal is to provide a comprehensive list of tools I use and how to set them up.
 

@@ -1,7 +1,11 @@
 ---
-title: "Rendezvous Protocols"
-date: 2018-04-08T16:57:42-04:00
+title: "Censorship Resistance or: How I Stopped Worrying and Learned to Rendezvous"
+date: 2018-04-08 01:30:00+09:00
+tags: ["Censorship"]
+aliases:
+- /2018/04/08/rendezvous/
 ---
+
 This post is about my thoughts on rendezvous protocols.
 
 Before you enter a house, you need to find a door. Before you join a network, you need to find an IP address. For the internet, we have things like domain names and DNS that translate website URLs we found on search engines into IP addresses which act as the doors to join a network. This is what a rendezvous is. A way for your computer to find another computer to connect to in order to join a network.
