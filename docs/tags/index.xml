@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 🙈   🙉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Dec 2017 01:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 08 Apr 2018 01:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.stefanaleksic.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Censorship</title>
+      <link>https://blog.stefanaleksic.com/tags/censorship/</link>
+      <pubDate>Sun, 08 Apr 2018 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/tags/censorship/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Personal</title>
@@ -23,7 +32,7 @@
     <item>
       <title>Productivity</title>
       <link>https://blog.stefanaleksic.com/tags/productivity/</link>
-      <pubDate>Fri, 23 Mar 2018 01:30:00 +0900</pubDate>
+      <pubDate>Sun, 08 Apr 2018 01:30:00 +0900</pubDate>
       
       <guid>https://blog.stefanaleksic.com/tags/productivity/</guid>
       <description></description>

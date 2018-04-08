@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.stefanaleksic.com/posts/2018/04/08/rendezvous/</loc>
+    <lastmod>2018-04-08T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.stefanaleksic.com/posts/2018/04/08/git/</loc>
+    <lastmod>2018-04-08T01:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.stefanaleksic.com/posts/2018/03/23/cool_hacker_tools_part_1/</loc>
     <lastmod>2018-03-23T01:30:00+09:00</lastmod>
   </url>
@@ -78,6 +88,12 @@
   </url>
   
   <url>
+    <loc>https://blog.stefanaleksic.com/tags/censorship/</loc>
+    <lastmod>2018-04-08T01:30:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.stefanaleksic.com/tags/personal/</loc>
     <lastmod>2017-12-31T01:30:00+09:00</lastmod>
     <priority>0</priority>
@@ -85,13 +101,13 @@
   
   <url>
     <loc>https://blog.stefanaleksic.com/posts/</loc>
-    <lastmod>2018-03-23T01:30:00+09:00</lastmod>
+    <lastmod>2018-04-08T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.stefanaleksic.com/tags/productivity/</loc>
-    <lastmod>2018-03-23T01:30:00+09:00</lastmod>
+    <lastmod>2018-04-08T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -115,7 +131,7 @@
   
   <url>
     <loc>https://blog.stefanaleksic.com/tags/</loc>
-    <lastmod>2017-12-31T01:30:00+09:00</lastmod>
+    <lastmod>2018-04-08T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -127,7 +143,7 @@
   
   <url>
     <loc>https://blog.stefanaleksic.com/</loc>
-    <lastmod>2018-03-23T01:30:00+09:00</lastmod>
+    <lastmod>2018-04-08T01:30:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

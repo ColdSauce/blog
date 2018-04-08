@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Censorship on 🙈   🙉</title>
+    <link>https://blog.stefanaleksic.com/tags/censorship/</link>
+    <description>Recent content in Censorship on 🙈   🙉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Apr 2018 01:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.stefanaleksic.com/tags/censorship/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Censorship Resistance or: How I Stopped Worrying and Learned to Rendezvous</title>
+      <link>https://blog.stefanaleksic.com/posts/2018/04/08/rendezvous/</link>
+      <pubDate>Sun, 08 Apr 2018 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2018/04/08/rendezvous/</guid>
+      <description>This post is about my thoughts on rendezvous protocols.
+Before you enter a house, you need to find a door. Before you join a network, you need to find an IP address. For the internet, we have things like domain names and DNS that translate website URLs we found on search engines into IP addresses which act as the doors to join a network. This is what a rendezvous is.</description>
+    </item>
+    
+  </channel>
+</rss>

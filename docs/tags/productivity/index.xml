@@ -6,10 +6,20 @@
     <description>Recent content in Productivity on 🙈   🙉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Mar 2018 01:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 08 Apr 2018 01:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.stefanaleksic.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cool Hacker Tools -- Git</title>
+      <link>https://blog.stefanaleksic.com/posts/2018/04/08/git/</link>
+      <pubDate>Sun, 08 Apr 2018 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2018/04/08/git/</guid>
+      <description>This blog post series’ goal is to provide a comprehensive list of tools I use and how to set them up.
+When I first started programming, I was so curious to try the coolest gadgets and try new editors, window managers, and programming languages. This blog post’s goal is to try to share as much information that I have with you, either a complete beginner, looking to increase your productivity and to make your stuff look really cool, or an experienced developer looking to add a few tools to your arsenal.</description>
+    </item>
     
     <item>
       <title>Cool Hacker Tools -- Vim</title>
