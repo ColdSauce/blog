@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.37.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="Live Streaming with Mac">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://blog.stefanaleksic.com/images/stylish.jpg">
+
+<meta name="description" content="">
+
+<meta name="twitter:title" content="Live Streaming with Mac">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://blog.stefanaleksic.com/images/stylish.jpg">
+<meta name="twitter:card" content="summary">
+
+
+
+
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/normalize.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/skeleton.css">
+<link rel="stylesheet" href="https://blog.stefanaleksic.com/css/custom.css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="🙈   🙉">
+<title>Live Streaming with Mac - 🙈   🙉</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+      <a href="https://blog.stefanaleksic.com"><img src="https://blog.stefanaleksic.com/images/stylish.jpg" width="60" height="60" alt="🙈   🙉"></a>
+		</div>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">Live Streaming with Mac</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2018-04-17">April 17, 2018</time></span>
+			<section itemprop="entry-text">
+				
+
+<p>I recently started live streaming my studying using Mac and Open Broadcaster Software (OBS)</p>
+
+<p>In this blog post, I want to talk about how I use OBS and other tools to create an effective and engaging live streaming experience.</p>
+
+<p>Live streaming your computer screen has historically had a gaming connotation. Because of this, most streaming tools have been focused on the Windows operating system. This has left a giant void in support of Mac and Linux. That, coupled with system restrictions that Mac enforces makes it hard to have an engaging and feature rich live streaming experience.</p>
+
+<p>However, with enough effort, it’s possible to get good enough (trademark) experience using a Mac.</p>
+
+<h2 id="sound">Sound</h2>
+
+<p>Capturing system sound on Mac is not a trivial process. There are security restrictions in place to make it impossible for applications to capture system sound. However, there are special applications that one can allow access to system sound.</p>
+
+<p>One of these that is pretty okay is SoundflowerBed. You can download it <a href="https://github.com/mattingalls/Soundflower">here</a>. Once you install it, you need to route your audio to it.</p>
+
+<p>Go to your Mac&rsquo;s Audio MIDI Setup and create a new MIDI Output Device. Check both Soundflower and Built-in output.</p>
+
+<p>After that, you can configure OBS to listen from Soundflower by creating a new Mic Input and</p>
+
+<p><img src="/images/obs/select_audio_input_capture.png" alt="" /></p>
+
+<p><img src="/images/obs/new_audio_capture.png" alt="" /></p>
+
+<p><img src="/images/obs/soundflower_select.png" alt="" /></p>
+
+<h2 id="plugins">Plugins</h2>
+
+<p>Unfortunately, most plugins made for OBS are made primarily for Windows.</p>
+
+<p>I have created a <a href="https://github.com/ColdSauce/Mac-OBS-Tools">Github Repo</a> where I have built some scripts to add functionality on top of OBS if you have a Mac. This type of functionality was only available to Windows users before.</p>
+
+<p>To use one of these plugins, run the script you wish to use. For example, I&rsquo;m going to run the <code>count_remaining.py</code> file.</p>
+
+<p>To do this, first I run</p>
+
+<p><code>python count_remaining.py &quot;Apr 28 2018 4:45PM&quot;</code></p>
+
+<p>Now a new file will be created in the directory where I ran my script called <code>time_remaining.py</code></p>
+
+<p>Now I can go into OBS and create a new module to put on my stream. The module type I was is a <code>Text</code> type.</p>
+
+<p><img src="/images/obs/select_text.png" alt="" /></p>
+
+<p>This will take me to a new window where I can chose the properties of this text.</p>
+
+<p><img src="/images/obs/read_from_file.png" alt="" /></p>
+
+<p>In the properties, I select <code>Read from file</code> and specify the <code>time_remaining.txt</code> file that my script wrote.</p>
+
+<h2 id="improvements">Improvements</h2>
+
+<p>There are still a lot of things that need to be improved in the overall grand scheme of things.</p>
+
+<p>The biggest being the lack of plugins. Whenever I find a need for a plugin, I write a Python script to do what I want and I put it on that repo. If you&rsquo;d like to help out, please feel free to submit a pull-request and I&rsquo;ll merge it if it&rsquo;s good!</p>
+
+<p>SoundflowerBed isn&rsquo;t the greatest piece of software created, and there are still a lot of bugs in it. If you are so inclined, please either report these bugs to the Github Repo or try to fix them and push your changes upstream, it would help everyone out.</p>
+
+<p>When it comes down to it, Mac isn&rsquo;t the dominant operating system for OBS so not all of the great functionality will be there. However, with some of these free tools, hopefully your experience got a whole lot better.</p>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="mailto:stefan@stefanaleksic.com" target="_blank">Email</a>
+			<a href="https://twitter.com/stayfun_" target="_blank">Twitter</a>
+			
+			<a href="https://github.com/coldsauce/" target="_blank">GitHub</a>
+			
+		</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
