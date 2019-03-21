@@ -5,6 +5,7 @@ publishDir = "docs"
 languageCode = "en-us"
 author = "coldsauce"
 theme = "hugo-zen"
+googleAnalytics = "UA-136703198-1"
 
 [params]
   logo      = "images/stylish.jpg"
