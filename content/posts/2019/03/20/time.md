@@ -23,6 +23,6 @@ Two rules of thumb for me:
 - Generalize a question to find very interesting unique answers
 - Think of the craziest most far out ideas even if you have no idea that they'll work
 
-The second point reminds me a bit of the idea of the Beginner's Mind. Naivety is the key to all true innovation, in my opinion. Having that beginner's mind makes you think in ways that nobody in the field/industry ever thought which is a huge advantage in coming up with somethings others have disregarded as impractical or otherwise irrelevant. I'm going to write a blog post about this sometime coming up because it's something I deeply believe in. 
+The second point reminds me a bit of the idea of the Beginner's Mind. Naivety is the key to all true innovation, in my opinion. Having that beginner's mind makes you think in ways that nobody in the field/industry ever thought which is a huge advantage in coming up with something others have disregarded as impractical or otherwise irrelevant. I'm going to write a blog post about this sometime coming up because it's something I deeply believe in. 
 
 I would love to talk more about ideas. I know the hit thing these days is "ideas are worthless, execution is what matters" but I'm a super curious person that likes prototyping on stuff. So if you want to brainstorm, I am always, always down. Hopefully we can use these techniques for both of us to have an interesting conversation. 
