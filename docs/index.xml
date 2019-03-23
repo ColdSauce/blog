@@ -6,10 +6,20 @@
     <description>Recent content on 🙈   🙉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Apr 2018 01:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2019 01:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.stefanaleksic.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Should Fish Have Twitter Accounts: Thinking about Questions and Ideas</title>
+      <link>https://blog.stefanaleksic.com/posts/2019/03/20/time/</link>
+      <pubDate>Wed, 20 Mar 2019 01:30:00 +0900</pubDate>
+      
+      <guid>https://blog.stefanaleksic.com/posts/2019/03/20/time/</guid>
+      <description>Answering specific questions is so limiting that when someone asks me to take part in answering a question they ask, I refuse. Usually, this would make a person anti-social, and make them lose all their friends. However, I&amp;rsquo;ve devised a system that works really well to avoid answering specific questions that don&amp;rsquo;t have a lot of practicality for anything other than their own domain.
+Instead of answering a specific question, I like to try to abstract away the specificity and go for the root of the question.</description>
+    </item>
     
     <item>
       <title>Live Streaming with Mac</title>
@@ -40,16 +50,6 @@ Before you enter a house, you need to find a door. Before you join a network, yo
       <guid>https://blog.stefanaleksic.com/posts/2018/04/08/git/</guid>
       <description>This blog post series’ goal is to provide a comprehensive list of tools I use and how to set them up.
 When I first started programming, I was so curious to try the coolest gadgets and try new editors, window managers, and programming languages. This blog post’s goal is to try to share as much information that I have with you, either a complete beginner, looking to increase your productivity and to make your stuff look really cool, or an experienced developer looking to add a few tools to your arsenal.</description>
-    </item>
-    
-    <item>
-      <title>Should Fish Have Twitter Accounts: Thinking about Questions and Ideas</title>
-      <link>https://blog.stefanaleksic.com/posts/2019/03/20/time/</link>
-      <pubDate>Sun, 08 Apr 2018 01:30:00 +0900</pubDate>
-      
-      <guid>https://blog.stefanaleksic.com/posts/2019/03/20/time/</guid>
-      <description>Answering specific questions is so limiting that when someone asks me to take part in answering a question they ask, I refuse. Usually, this would make a person anti-social, and make them lose all their friends. However, I&amp;rsquo;ve devised a system that works really well to avoid answering specific questions that don&amp;rsquo;t have a lot of practicality for anything other than their own domain.
-Instead of answering a specific question, I like to try to abstract away the specificity and go for the root of the question.</description>
     </item>
     
     <item>

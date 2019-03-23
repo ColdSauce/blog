@@ -1,6 +1,6 @@
 ---
 title: "Should Fish Have Twitter Accounts: Thinking about Questions and Ideas"
-date: 2018-04-08 01:30:00+09:00
+date: 2019-03-20 01:30:00+09:00
 tags: ["Productivity"]
 description: "How I go about answering questions and thinking about things."
 aliases:
@@ -19,6 +19,7 @@ Speaking of ideas, I've changed my view on how I think about ideas. I now defaul
 
 
 Two rules of thumb for me:
+
 - Generalize a question to find very interesting unique answers
 - Think of the craziest most far out ideas even if you have no idea that they'll work
 
